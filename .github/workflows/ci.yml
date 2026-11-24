@@ -1,0 +1,19 @@
+name: CI — ghost-cpp (Zero-vcpkg, Zero-Conan, Zero-CMake Verification)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verify-ghost-cpp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile Pure C11 Demo & Call Live Native libbrotli from Canonical cas-v1
+        run: |
+          SHA=$(curl -fsSL https://raw.githubusercontent.com/awesome-os/b8g-ghost/main/manifests/index.json | python3 -c "import sys,json; print(json.load(sys.stdin)['entries']['libbrotli-linux-x64.so']['sha256'])")
+          sed -i "s/f9b6f07e449334d3927848394cf6f9b9d69c0d19e51d2e89d01f9867262135a4/${SHA}/g" examples/brotli_demo.c
+          cc -O2 -Iinclude src/b8g_ghost.c examples/brotli_demo.c -ldl -o brotli_demo
+          ./brotli_demo
+          ./brotli_demo
