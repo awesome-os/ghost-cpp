@@ -1,0 +1,52 @@
+{
+  "schema": "holo-compiler-lockfile-v1",
+  "abiMagic": "0x33564742",
+  "casLayout": "v11",
+  "repo": "awesome-os/ghost-cpp",
+  "targets": [
+    "win64",
+    "linux-x64",
+    "linux-arm64",
+    "macos-arm64",
+    "wasm32-wasi"
+  ],
+  "generatedAt": "2026-11-24T23:53:02.473Z",
+  "dependencies": [
+    {
+      "id": "awesome-os/ghost-cpp/ghost-cpp-v0.2.0.tar.zst",
+      "kind": "object",
+      "version": "v0.2.0",
+      "target": "any",
+      "sha512": "e92a4f79a82399f8dd4aaa8fdca5dc30727d1714f4457f7dee1939a705b41a6278092db500e5f22d57b78ff2982e427e831dfecb38ca22e0620c5a5b215e177b",
+      "size": 6438,
+      "executable": false,
+      "blob": "v11/files/e9/e92a4f79a82399f8dd4aaa8fdca5dc30727d1714f4457f7dee1939a705b41a6278092db500e5f22d57b78ff2982e427e831dfecb38ca22e0620c5a5b215e177b",
+      "url": "https://github.com/awesome-os/ghost-cpp/releases/download/v0.2.0/ghost-cpp-v0.2.0.tar.zst",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/ghost-cpp/SHA256SUMS.txt",
+      "kind": "object",
+      "version": "v0.2.0",
+      "target": "any",
+      "sha512": "60545c97127b20e4638f6e295db9c46921df48aed4dd76ec4f78a58e2b9e38968b0454d9f8cca9acd902cc7c33431969917eb0161594a4c61710a21c0ed7286f",
+      "size": 91,
+      "executable": false,
+      "blob": "v11/files/60/60545c97127b20e4638f6e295db9c46921df48aed4dd76ec4f78a58e2b9e38968b0454d9f8cca9acd902cc7c33431969917eb0161594a4c61710a21c0ed7286f",
+      "url": "https://github.com/awesome-os/ghost-cpp/releases/download/v0.2.0/SHA256SUMS.txt",
+      "dependencies": []
+    },
+    {
+      "id": "awesome-os/ghost-cpp/SHA512SUMS.txt",
+      "kind": "object",
+      "version": "v0.2.0",
+      "target": "any",
+      "sha512": "efedf20c1e59c93e0fe53e44d10b0765af609405aae790cf5fcf7b6723e9c18431198b89ef3e112bcc377143505102677a32a68aa0df429bccc144032793f5c1",
+      "size": 155,
+      "executable": false,
+      "blob": "v11/files/ef/efedf20c1e59c93e0fe53e44d10b0765af609405aae790cf5fcf7b6723e9c18431198b89ef3e112bcc377143505102677a32a68aa0df429bccc144032793f5c1",
+      "url": "https://github.com/awesome-os/ghost-cpp/releases/download/v0.2.0/SHA512SUMS.txt",
+      "dependencies": []
+    }
+  ]
+}
