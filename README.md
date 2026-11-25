@@ -27,3 +27,13 @@ cc -O2 -Iinclude src/b8g_ghost.c examples/brotli_demo.c -ldl -o brotli_demo && .
 ```
 
 On first run, `brotli_demo` hydrates `libbrotli` from **`awesome-os/b8g-ghost @ cas-v1`** into your shared Machine CAS, verifies FIPS 180-4 SHA-256, loads it via `dlopen`/`LoadLibrary`, and executes native `BrotliDecoderVersion()`. Every subsequent run hits local CAS in `0 ms`!
+
+## Quick Install & Run (Windows / Linux / macOS)
+
+```sh
+# Install / hydrate from v11 CAS via holo-pm
+holo-pm install repository://github.com/awesome-os/ghost-cpp@main
+
+# Or project & run directly via holo-project (0-byte hardlink)
+holo-project "project://cpp/ghost-cpp?from=repository://github.com/awesome-os/ghost-cpp@main"
+```
